@@ -1,7 +1,16 @@
 # kmeans-lloyd-stalling
 'Understanding Why Lloyd's Algorithm in K-Means Clustering Frequently Stalls at Suboptimal Cluster Solutions.' It explores algorithmic stalling via a practical case study, analyzing 162k+ retail transactions from a major EU supermarket chain in Poland using 1,000 Monte Carlo replications
 
-Overview: Briefly state that this project is a Monte Carlo simulation analyzing why K-Means clustering stalls at suboptimal solutions, using 162,926 point-of-sale transactions from a Polish supermarket.  Key Innovations: Highlight your custom convergence metric, Mean Centroid Displacement (MCD), and the dimensionless "Lloyd Bias" framework.  Major Findings: Clearly state your most striking results. Note that Lloyd's algorithm stalls in 99.9% of individual runs at $k=7$. Mention that K-Means++ reduces displacement variance by 2-6% but only reduces the stall probability by a mere 0.1%.  Business Impact: Explain that standard single-iteration K-Means can cause 25% to 40% of customers to be placed into different segments just by changing the random seed.  Reproducibility: Explicitly mention that the code uses deterministic random seeds (0 to 999) to guarantee the full reproduction of the 440,000 algorithm executions
+Overview: 
+Briefly state that this project is a Monte Carlo simulation analyzing why K-Means clustering stalls at suboptimal solutions, using 162,926 point-of-sale transactions from a Polish supermarket. 
+
+Key Innovations: Highlight your custom convergence metric, Mean Centroid Displacement (MCD), and the dimensionless "Lloyd Bias" framework. 
+
+Major Findings: Clearly state your most striking results. Note that Lloyd's algorithm stalls in 99.9% of individual runs at $k=7$. Mention that K-Means++ reduces displacement variance by 2-6% but only reduces the stall probability by a mere 0.1%.
+
+Business Impact: Explain that standard single-iteration K-Means can cause 25% to 40% of customers to be placed into different segments just by changing the random seed.  
+
+Reproducibility: Explicitly mention that the code uses deterministic random seeds (0 to 999) to guarantee the full reproduction of the 440,000 algorithm executions
 
 ```markdown
 # Understanding Why Lloyd's Algorithm Stalls in K-Means Clustering
