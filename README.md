@@ -55,7 +55,6 @@ The research utilizes real-world retail data to test algorithmic performance:
 * **Periods Covered:** Dec 2017 | Feb 2019 | Mar–Apr 2019
 * **Features:** 10 engineered transaction-level features (z-score normalized)
 
-*(Note: To comply with data privacy and repository size limits, the raw dataset is not included in this repository. Ensure you place your local data in the `data/` directory, which is tracked via `.gitignore`.)*
 
 ## 🔬 Experimental Configuration
 
